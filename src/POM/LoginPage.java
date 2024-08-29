@@ -9,7 +9,7 @@ public class LoginPage {
 	public LoginPage(WebDriver d) {
 		driver = d;
 	}
-	
+	//Without using page factory method
 	By usename = By.id("user-name");
 	By password = By.id("password");
 	By loginbutton = By.id("login-button");
