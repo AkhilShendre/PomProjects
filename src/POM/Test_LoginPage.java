@@ -10,11 +10,12 @@ public class Test_LoginPage {
 		WebDriver driver = new ChromeDriver();
 	
 		driver.get("https://www.saucedemo.com");
-		
+		driver.manage().window().maximize();		
 		LoginPage pg = new LoginPage(driver);
 		pg.enterUsername("standard_user");
 		pg.enterPassword("secret_sauce");
 		pg.clickLoginButton();
+		driver.close();
 
 	}
 
